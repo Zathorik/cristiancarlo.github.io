@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en" class="no-js" >
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Cristian Carlo</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hudson</title>
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=1000; user-scalable=1.0;" />
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- favicons
     ================================================== -->
@@ -33,810 +27,560 @@
 
 </head>
 
+
 <body id="top">
 
+    
+    <!-- preloader
+    ================================================== -->
     <div id="preloader">
-        <div id="loader"></div>
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <!-- site header
+
+    <!-- page wrap
     ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
-            </a>
-        </div>
-
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">capabilities</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Get in touch</a></li>	
-            </ul>
-
-            <ul class="header-social">
-                <li><a href="https://www.linkedin.com/in/cristiancarlo/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="mailto:id.cristiancarlo@gmail.com"><i class="fab fa-google" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
+    <div id="page" class="s-pagewrap">
 
 
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
 
-        <div class="row intro-content">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.svg" alt="Homepage">
+                        </a>
+                    </div>
 
-            <div class="column large-9 mob-full intro-text">
-                <h3>Product & Industrial Designer</h3>
-                <h1>
-                    Cristian Carlo <br>
-                    Rojas de la Rosa <br>
-                    Tijuana, B.C.
-                </h1>
-            </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
 
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scroll For More
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#works">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
+                        <h1 class="s-intro__content-title">
+                        I'm Cristian Carlo <br>
+                        a product designer <br>
+                        based in Tijuana MX.
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+              
+           
+                <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2c-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7c120.2 0 142.3 79.1 142.3 181.9v209.4z"/></svg>
+                        <span class="u-screen-reader-text">Linkedin</span>
+                    </a>
+                </li>
+
+		
+		 <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM679 697.6C638.4 735 583 757 516.9 757c-95.7 0-178.5-54.9-218.8-134.9A245.02 245.02 0 0 1 272 512c0-39.6 9.5-77 26.1-110.1c40.3-80.1 123.1-135 218.8-135c66 0 121.4 24.3 163.9 63.8L610.6 401c-25.4-24.3-57.7-36.6-93.6-36.6c-63.8 0-117.8 43.1-137.1 101c-4.9 14.7-7.7 30.4-7.7 46.6s2.8 31.9 7.7 46.6c19.3 57.9 73.3 101 137 101c33 0 61-8.7 82.9-23.4c26-17.4 43.2-43.3 48.9-74H516.9v-94.8h230.7c2.9 16.1 4.4 32.8 4.4 50.1c0 74.7-26.7 137.4-73 180.1z"/></svg>
+				<span class="u-screen-reader-text">Gmail</span>
+
+                    </a>
+                </li>
+
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg.jpg 2x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="#0">Get My CV</a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
                 </a>
-            </div>
+            </div> <!-- s-intro__scroll-down -->
 
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
+        </section> <!-- end s-intro -->
 
 
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
 
-        <div class="about-me">
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
 
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                    <p class="lead">
-                    Detailed oriented, performance driven and highly accomplished Industrial Designer 
-			  with 6+ years of experience developing innovative product designs. 
+                    <p class="attention-getter">
+                   I'm a dynamic and versatile designer, with a passion for crafting meaningful user experiences that bridge the gap between form and function. With a background in industrial design, coupled with expertise in packaging engineering and a flair for out-of-the-box thinking, I am excited to bring a unique perspective to the world of UX product design.
                     </p>
 
-                    <p>
-                    Adept at completing projects within budget and in a timely manner. Excellent knowledge of multiple 
-			  design software programs, great teamwork abilities, and extraordinary communication skills.
+
+   <p class="attention-getter">
+                    Throughout my journey as an industrial designer, I've had the privilege of immersing myself in the world of product aesthetics, ergonomics, and manufacturing processes. I've honed the ability to transform concepts into tangible, user-centric designs that not only capture attention but also seamlessly integrate into users' lives. This experience has developed in me a keen eye for detail and an understanding of the delicate balance between aesthetics and usability.
                     </p>
 
-			  <p>
-			  Proficient in computer-aided design and drafting software, three-dimensional design and various 
-			  manufacturing methods.  Successful in working long hours in challenging environments.
-                    </p>
 
-                    <p>
-                    Able to identify market trends inspire and satisfy customer’s demands, define and implement product 
-			  design processes, troubleshoot and solve problems following design thinking methodologies. 
-                    </p>
+                    <div class="grid-list-items s-about__blocks">
 
-                    <p>
-                    Packaging, end-user and out-of-box experience engineering background, former Sr. engineer at Poly, responsible for 
-			  global enterprise and retail primary, secondary and tertiary packaging for a wide range of premium audio and video products.
-                    </p>
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Education</h4>
+                            <ul class="s-about__list">
 
-			  <p>
-			  Currently taking Google’s UX Design certificate, transitioning to UX to become the Swiss army knife of 
-			  design that can tackle multiple design problems, forecast a new future, shift conventional thinking and
-			  behaviors within the digital world. 
-			  </p>
-
-                </div>
-            </div>
-    
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://mx.linkedin.com/in/cristiancarlo?trk=profile-badge" class="btn btn--stroke full-width">Linked in</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://drive.google.com/file/d/1v5tQR6_vWTGffJOnxJYUOA8ttLrlJ2iU/view?usp=share_link" class="btn btn--primary full-width">Download CV</a>
-                </div>
-            </div>
-
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2016 - Present</p>
-                                <h3 class="item-title">Freelance Designer</h3>
-                                <h5>Branding and Graphic Designer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Developed concepts and designs for new brands, utilizing Adobe Creative Suite (Ps, Ai, Lr & Id). Designed visual content for social networks, revamped company identity, created design guidelines for digital and printed content to boost brand image.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2022 - December 2022</p>
-                                <h3 class="item-title">HP Inc.</h3>
-                                <h5>Sr. Packaging Design Engineer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Worked with other design team leaders to maintain a continually evolving culture of great design. Proactively identified opportunities for process improvement, user experience, brand and cost reductions opportunities.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">April 2019 - August 2022</p>
-                                <h3 class="item-title">Poly (Plantronics+Polycom)</h3>
-                                <h5>Full & Sr. Packaging Design Engineer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Established and maintained hands-on involvement with product development managers and design department standards, mentored new & senior engineers and designers within the context of their projects and career development to ensure design excellence, responsible packaging and environmental friendly solutions.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">December 2017 - March 2019</p>
-                                <h3 class="item-title">Plantronics, Inc.</h3>
-                                <h5>Jr. & Full Packaging Design Engineer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Experienced collaboration with multidisciplinary teams: Product Managers, UX/UI Designers, Project Managers, Commodity Managers,  Graphic Designers, Manufacturing and QA Engineers. Communicated project status, held design reviews and escalated issues to direct managers, Program Managers, and internal and external development partners.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">November 2016 - November 2017</p>
-                                <h3 class="item-title">Plantronics Internship</h3>
-                                <h5>Packaging and Prototyping Intern</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Provided assistance to packaging engineers and industrial designers to create and develop concepts and specifications that optimize the function, value and appearance of our products for the mutual benefit of the user and manufacturer. Held a personal project for Packaging eng. Laboratory Showroom.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2012 - December 2017</p>
-                                <h3 class="item-title">Universidad Autónoma de Baja California</h3>
-                                <h5>University Degree, Industrial Design</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Industrial design, including product, graphics and packaging. Developed capabilities for inspiring, providing vision and design direction to others. Highly developed visualization skills (Sketch, 3D modelling, 3D rendering) and abilities to drive design thinking and user centric innovation.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
-
-                <p class="section-desc">
-                   Design   +   Art +   Engineering
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Product & Concept Design</h4>
-                    <p>
-                 		Solve problems with innovative solutions by understanding the human needs involved, 
-				reframing the problem, creating feasible and effective ideas and adopting a practical 
-				approach through the development of tested prototypes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">3D Modeling & Rendering</h4>
-                    <p>
-                    	Fundamental understanding of 3D graphics mechanics, surfaces, assemblies and simulations. 
-				Proficient in Solidworks, AutoCad, Catia, Rhino and Keyshot for manufacturing and high-res 
-				images for a wide range of visual content.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Packaging Engineering</h4>
-                    <p>
-                 	 	Produce corporate documentation standards for packaging specifications, create CAD and 3D library 
-				templates for corrugated and paper packaging. Design, manufacturing, marketing, graphic design, regulatory, purchasing and planning.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Design Thinking</h4>
-                    <p>
-                    	Mindset and approach to problem-solving and innovation anchored around human-centered design.
-				Capable brainstorming, and taking a practical approach to prototyping and testing.
-				Refined non-linear, interative methodology process.
-				
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Branding & Identity</h4>
-                    <p>
-                  	Create, redesign and refresh distinct identity for product and service. Contributing to the brand 
-				strategies, establish design guidelines, produce content across a variety of formats including logos, visual identities, social media, print-ready files and out-of-home media.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">UX</h4>
-                    <p>
-                    	Analyze physical qualities, ergonomics, semantics, and function. Ergonomy, Ethnography Research, Human Factors, 
-				Mental Models and Data Gathering skills to develop practical and usable products by creating conditions 
-				that are more likely to lead to a positive impression.
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
-                <p class="section-desc">
-                  Here are some of my selected works.
-			Feel free to check them out.
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="masonry-wrap">
-
-            <div class="masonry">
-                <div class="grid-sizer"></div>
-
-<div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/WIREFRAME_2100.png" class="thumb-link" title="Wireframe" data-size="1050x700">
-                                <img src="images/portfolio/VEGAN_600.png" 
-                                     srcset="images/portfolio/WIREFRAME_600.png 1x, images/portfolio/WIREFRAME_1200.png 2x" alt="">
-                            </a>
-                            
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Snack ordering app
-                            </h4>
-                            <p class="item-folio__cat">
-                                Wireframing & Lo-fi Prototype
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Snack ordering app is part of my Google UX course case study. To begin the process of creating digital wireframes, parting from the original user flow, paper wireframes and research, took the time to draft iterations of each screen of the app on paper to ensure that the elements that made it to digital wireframes would address user pain points. 
- <a href="https://www.figma.com/proto/JGVeV3iNtZYciPytzpqdCM/Snack-ordering-app?page-id=0%3A1&type=design&node-id=1-11&viewport=392%2C223%2C0.31&scaling=scale-down&starting-point-node-id=1%3A2" class="item-folio__project-link" title="Project link" target="_blank">Click here to interact with prototype</a>.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-<div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/HIFI_2100.png" class="thumb-link" title="HighFidelity" data-size="1050x700">
-                                <img src="images/portfolio/HIFI_600.png" 
-                                     srcset="images/portfolio/HIFI_600.png 1x, images/portfolio/HIFI_1200.png 2x" alt="">
-                            </a>
-                         
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                App mockups
-                            </h4>
-                            <p class="item-folio__cat">
-                                Hi-fi Prototypes
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>These are some of the hi-fi prototypes I've worked on with Figma. Perfomed usability studies to test and improve the user journey and revamp UI elements.
-
-<a href="https://www.figma.com/proto/9CkDqEtbvGRyk0CutKzMtU/EXERCISE-1?page-id=128%3A110&type=design&node-id=128-111&viewport=729%2C474%2C1&scaling=scale-down&starting-point-node-id=128%3A111">PlayStation Store App</a> / 
-
-<a href="https://www.figma.com/proto/9CkDqEtbvGRyk0CutKzMtU/EXERCISE-1?page-id=106%3A30&type=design&node-id=106-31&viewport=831%2C202%2C0.42&scaling=scale-down&starting-point-node-id=106%3A31" class="item-folio__project-link" title="Project link" target="_blank">Food Delivery App</a> / 
-
-<a href="https://www.figma.com/proto/9CkDqEtbvGRyk0CutKzMtU/EXERCISE-1?page-id=102%3A30&type=design&node-id=102-31&viewport=923%2C446%2C1.12&scaling=scale-down&starting-point-node-id=102%3A31" class="item-folio__project-link" title="Project link" target="_blank">Sushi App</a> .
-
-</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-
-  		<div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/VEGAN_2100.png" class="thumb-link" title="VivaLaVegan" data-size="1050x700">
-                                <img src="images/portfolio/VEGAN_600.png" 
-                                     srcset="images/portfolio/VEGAN_600.png 1x, images/portfolio/VEGAN_1200.png 2x" alt="">
-                            </a>
-                            <a href="https://drive.google.com/file/d/1kwEaDxavwR18WIG2LpnueIu5Wqwm98eQ/view?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Viva La Vegan
-                            </h4>
-                            <p class="item-folio__cat">
-                                Branding & Identity
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Designed visual content for social networks, revamped company identity, created design guidelines for digital and printed content to boost brand image. <a href="https://drive.google.com/file/d/1kwEaDxavwR18WIG2LpnueIu5Wqwm98eQ/view?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank">Click here for more</a>.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/GUIDES_2100.png" class="thumb-link" title="Guides" data-size="1050x700">
-                                <img src="images/portfolio/GUIDES_600.png" 
-                                     srcset="images/portfolio/GUIDES_600.png 1x, images/portfolio/GUIDES_1200.png 2x" alt="">
-                            </a>    
-                            <a href="https://drive.google.com/drive/folders/1AIbQlBOZWjOp-O4v9EYm53SU7F02Ok7B?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-    
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Quick Start Guides
-                            </h4>
-                            <p class="item-folio__cat">
-                                Human Factors & UX
-                            </p>
-                        </div>
-    
-                        <div class="item-folio__caption">
-                            <p>Partnered with Design Directors, Technical Writers and Human Factors to design and produce wordless visual instructions & templates for 30+ product quick start guides. <a href="https://drive.google.com/drive/folders/1AIbQlBOZWjOp-O4v9EYm53SU7F02Ok7B?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank">Click here for more</a>.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/VOY4300_2100X1400.png" class="thumb-link" title="VoyagerUC" data-size="1050x700">
-                                <img src="images/portfolio/VOY4300_600X600.png" 
-                                     srcset="images/portfolio/VOY4300_600X600.png 1x, images/portfolio/VOY4300_1200X1200.png 2x" alt="">
-                            </a>
+<li>
+                                    <a href="#0">
+                                        UX Design Professional Certificate
+						      <span>Google Online Course</span>
+                                        <span>Feb 2023 - Ongoing</span>
+                                    </a>                                        
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Packaging Design Engineering
+							<span>CETYS Universidad</span>
+                                        <span>Issued April 2022</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        University Degree, Industrial Design
+							<span>Google Online Course</span>
+                                        <span>Issued July 2017</span>
+                                    </a>
                            
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Poly Voyager UC
-                            </h4>
-                            <p class="item-folio__cat">
-                                Packaging & Rebrand
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Partnered with Design Directors, Product Mgmt and Marketing on packaging and brand revamp, establishing a design system to help our internal teams, and other stakeholders amplify our brand in the marketplace.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
+                            </ul>
+                               
+                        </div> <!--end s-about__block -->
 
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/STUDIOP5_2100.png" class="thumb-link" title="StudioP5" data-size="1050x700">
-                                <img src="images/portfolio/STUDIOP5_600.png"
-                                     srcset="images/portfolio/STUDIOP5_600.png 1x, images/portfolio/STUDIOP5_1200.png 2x" alt="">
-                            </a>
-                            
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Poly Studio P5
-                            </h4>
-                            <p class="item-folio__cat">
-                                Packaging & Guidelines
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Develop user-focused technical and image-based content for the new video business unit.  Reduced and styled packaging size for image, cost and shipping improvements. </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
 
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/VOY5200_2100.png" class="thumb-link" title="Voyager" data-size="1050x700">
-                                <img src="images/portfolio/VOY5200_600.png" 
-                                     srcset="images/portfolio/VOY5200_600.png 1x, images/portfolio/VOY5200_1200.png 2x" alt="">
-                            </a>
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Experience</h4>
+
+                            <ul class="s-about__list">
+                                 <li>
+                                    Hewlett-Packard
+                                    <span>Senior Packaging Design Engineer</span>
+                                </li>
+                                <li>
+                                    Poly Inc.
+                                    <span>Senior Packaging Design Engineer</span>
+                                </li>
+                                <li>
+                                    Plantronics
+                                    <span>Packaging Design Engineer</span>
+                                </li>
+                                <li>
+                                    Plantronics
+                                    <span>Prototyping & Testing Internship</span>
+                                </li>
+                                <li>
+                                    Freelance
+                                    <span>Visual Designer</span>
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
                         
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Poly+HP Commemorative Ed.
-                            </h4>
-                            <p class="item-folio__cat">
-                                Packaging Design
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Collaborated with UX, ID & Creative directors creating concepts, testing and developing manufacture ready files for Voyager 5200 UC commemorative gift pack to celebrate Poly integration to HP inc. </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Skills</h4>
 
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/DELL_2100.png" class="thumb-link" title="Dell" data-size="1050x700">
-                                <img src="images/portfolio/DELL_600.png" 
-                                     srcset="images/portfolio/DELL_600.png 1x, images/portfolio/DELL_1200.png 2x" alt="">
-                            </a>
-                            
+                            <ul class="s-about__list">
+                                <li>
+                                    Product Design
+                                </li>
+                                <li>
+                                    UI/UX Design
+                                </li>
+                                <li>
+                                    Prototyping
+                                </li>
+                                <li>
+                                    Wireframing
+                                </li>
+                                <li>
+                                    3D Modeling
+                                </li>
+                                <li>
+                                    Visual Design
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                    </div> <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Selected Works.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-turban.jpg" class="entry__link glightbox" data-glightbox="title: White Knit Cap; description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="images/folio/white_turban.jpg" srcset="images/folio/white_turban.jpg 1x, images/folio/white_turban@2x.jpg 2x" alt="">
                         </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Dell WL7022 & WL5022
-                            </h4>
-                            <p class="item-folio__cat">
-                                Packaging & Guidelines
-                            </p>
+                        <div class="entry__info">
+                            <h4 class="entry__title">White Knit Cap</h4>
+                            <div class="entry__cat">Frontend Design</div>
                         </div>
-                        <div class="item-folio__caption">
-                            <p>Oversaw guidelines and specifications for print production, in addition to equipment and quality control practices to ensure Dell branding consistency on retail and enterprise packaging.</p>
-                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-01">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
                     </div>
-                </div> <!-- end masonry__brick -->
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-woodcraft.jpg" class="entry__link glightbox" data-glightbox="title: WoodCraft; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/folio/woodcraft.jpg" srcset="images/folio/woodcraft.jpg 1x, images/folio/woodcraft@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">WoodCraft</h4>
+                            <div class="entry__cat">Product Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-tulips.jpg" class="entry__link glightbox" data-glightbox="title: Caffeine & Tulips; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/folio/caffeine_and_tulips.jpg" srcset="images/folio/caffeine_and_tulips.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Caffeine & Tulips</h4>
+                            <div class="entry__cat">Brand Identity</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-grayscale.jpg" class="entry__link glightbox" data-glightbox="title: Grayscale; description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, images/folio/grayscale@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Grayscale</h4>
+                            <div class="entry__cat">Product Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-lamp.jpg" class="entry__link glightbox" data-glightbox="title: The Lamp; description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="images/folio/lamp.jpg" srcset="images/folio/lamp.jpg 1x, images/folio/lamp@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">The Lamp</h4>
+                            <div class="entry__cat">Brand Identity</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-05">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/gallery/g-tropical.jpg" class="entry__link glightbox" data-glightbox="title: Tropical; description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, images/folio/tropical@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Tropical</h4>
+                            <div class="entry__cat">Frontend Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Inventore ipsum iste soluta fugiat, impedit illum ducimus 
+                        deleniti facilis ab, tempora non! Nisi, tempora provident.
+                        <a href="https://www.behance.net/">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry --> 
+
+            </div> <!-- folio entries -->
+
+
+            <div class="row s-testimonials">
+                <div class="column xl-12">
+
+                    <h3 class="s-testimonials__header">Find out from the people I work with.</h3>
+    
+                    <div class="swiper-container s-testimonials__slider">
+    
+                        <div class="swiper-wrapper">
+
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Jayson Pegler</strong>
+                                        <span>Design Director at Poly Inc.</span>
+                                    </cite>
+                                </div>
+                                <p>
+                               Cristian has been the go to colleague extraordinaire. A true asset I wish were still a part of our team. He easily maneuvers from big picture strategy down to detail focused tactical problem solving. He just gets it. 
+                                </p>
+ <p>
+Cristian has a vast knowledge for product development and is a fast learner for things that are new. I knew early on that Cristian is capable of much more than he was given responsibility for and I’m looking forward to see where his path goes next.
+ </p>
+                            </div> <!-- end s-testimonials__slide -->
+            
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Ashley Hellmann</strong>
+                                        <span>Senior Product Manager at Zoom</span>
+                                    </cite>
+                                </div>
+                                <p>
+                              I worked with Cristian at Poly, he was a packaging engineer and I was a HW PM, we worked closely together for about 3 years. Cristian is very easy to work with, always on top of his projects/tasks, detail oriented and communicative. 
+                                </p>
+
+  <p>
+I was always happy when I knew Cristian was assigned to one of my projects as I was confident it would be executed in a timely fashion and correctly. I highly recommend Cristian and can't wait to see where he goes next.
+ </p>
+                            </div> <!-- end s-testimonials__slide -->
+            
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Petra Serafim</strong>
+                                        <span>Senior Technical Writer at HP</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                I highly recommend Cristian as a creative and strategic thinker whose skills can be successfully applied to industrial, packaging or user experience design. I worked closely with Cristian for over five years. 
+                                </p>
+
+<p>
+He worked on all the details of a product’s packaging. He has a great eye for designing systems that work across a wide variety of products and needs. He has great attention to detail and builds systems with the user in mind.
+ </p>
+                            </div> <!-- end s-testimonials__slide -->
+    
+                        
+                            </div> <!-- end s-testimonials__slide -->
         
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/ENTERPRISE_2100.png" class="thumb-link" title="Enterprise" data-size="1050x700">
-                                <img src="images/portfolio/ENTERPRISE_600.png"
-                                     srcset="images/portfolio/ENTERPRISE_600.png 1x, images/portfolio/ENTERPRISE_1200.png 2x" alt="">
-                            </a>
-                           
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Poly Enterprise Lineup
-                            </h4>
-                            <p class="item-folio__cat">
-                              Packaging & Design System
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Designed and developed unique packaging for 30+ product launches across the collaboration family including PC corded headsets, Bluetooth headsets, and speakerphones.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/BUNDLE_2100.png" class="thumb-link" title="PolyStudio" data-size="1050x700">
-                                <img src="images/portfolio/BUNDLE_600.png"
-                                     srcset="images/portfolio/BUNDLE_600.png 1x, images/portfolio/BUNDLE_1200.png 2x" alt="">
-                            </a>
-                           
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Poly Studio P5 Kits
-                            </h4>
-                            <p class="item-folio__cat">
-                                Work From Home Packaging
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Conceived, developed, and resolved: award winner Poly Studio P5 kit bundle’s out-of-the-box experience and easy set up work from home kits. Designed overall packaging, paperpulp tray, guides and Poly lens coaster.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/COSTCO_2100.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/portfolio/COSTCO_600X600.png" 
-                                     srcset="images/portfolio/COSTCO_600X600.png 1x, images/portfolio/COSTCO_1200X1200.png 2x" alt="">
-  				    </a>    
-                     
-                         
-                        </div>
+                        </div> <!-- end swiper-wrapper -->
     
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Backbeat FIT series
-                            </h4>
-                            <p class="item-folio__cat">
-                                Retail Packaging & Display
-                            </p>
-                        </div>
+                      
     
-                        <div class="item-folio__caption">
-                            <p>Design, test and implement a variety of packaging for retail and club stores, including development of new packaging structures that meet project and branding objectives.</p>
+                </div> <!-- end column -->
+            </div> <!-- end s-testimonials -->
+
+        </section> <!-- end s-works --> 
+
+
+        
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum quasi facere libero, 
+                    fugiat laboriosam possimus amet consectetur adipisicing elit reprehenderit eveniet tempore quisquam ipsa id esse. Facere ratione dignissimos.
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="#0">LinkedIn</a></li>
+                                <li><a href="#0">Gmail</a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-			<div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/JEWEL_2100.png" class="thumb-link" title="Other" data-size="1050x700">
-                                <img src="images/portfolio/JEWEL_600.png" 
-                                     srcset="images/portfolio/JEWEL_600.png 1x, images/portfolio/JEWEL_1200.png 2x" alt="">
-                            </a>    
-                            <a href="https://drive.google.com/drive/folders/16PldoXgdfprdMOBydVns8TIQvEcnuip1?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:#0">id.cristiancarlo@gmail.com</a></li>
+                                <li><a href="tel:+526643280109">(+52) 664 328 0109</a></li>
+                            </ul> 
                         </div>
-    
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Other
-                            </h4>
-                            <p class="item-folio__cat">
-                                Concept & Visual Content
-                            </p>
-                        </div>
-    
-                        <div class="item-folio__caption">
-                            <p>Selected visual content compendium from my work as freelancer. <a href="https://drive.google.com/drive/folders/16PldoXgdfprdMOBydVns8TIQvEcnuip1?usp=share_link" class="item-folio__project-link" title="Project link" target="_blank">Click here for more</a>.</p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
 
-            </div> <!-- end masonry -->
-
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-work -->
+            </div> <!-- end section-footer__content -->
 
 
-    <!-- testimonies
-    ================================================== -->
-    <section class="s-testimonials">
-    
-        <div class="row testimonials" data-aos="fade-up">
-
-            <div class="column large-full testimonials__slider">
-
-                <div class="testimonials__slide">
-                    <p>	"Cristian has been the go to colleague extraordinaire. A true asset I wish were still a part of our team. 
-				He easily maneuvers from big picture strategy down to detail focused tactical problem solving. He just gets it. 
-				Cristian has a vast knowledge for product development and is a fast learner for things that are new." </p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Jayson Pegler</strong>
-                            <span>Design Director at Poly - A Hewlett Packard Company</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-                <div class="testimonials__slide">
-                    <p> "I highly recommend Cristian (Carlo) as a creative and strategic thinker whose skills can be successfully applied to industrial design, 
-				packaging design or user experience design. Cristian has a great eye for designing packaging systems that work across a wide variety 
-				of products and needs. He has great attention to detail and builds systems with the user in mind."</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Petra Serafim</strong>
-                            <span>Senior Technical Writer at HP</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
- 		    <div class="testimonials__slide">
-                    <p> "Cristian is very easy to work with, always on top of his projects/tasks, detail oriented, organized and highly communicative. 
-				I was always happy when I knew Cristian was assigned to one of my projects as I was confident it would be executed in a timely 
-				fashion and correctly. I highly recommend Cristian and can't wait to see where he goes next."</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Ashley Hellmann</strong>
-                            <span>Senior Product Manager at Zoom</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:#0" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="#0" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
                 
-            </div> <!-- end testimonials__slider -->
-
-        </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
-            </div>
-        </div>
-
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:id.cristiancarlo@gmail.com">id.cristiancarlo@gmail.com</a>
-                </p>
-
-                <p class="section-desc"> 
-                Thank you for your interest in my work. If you would like to discuss more, share feedback, or ask any questions, I’m just one click away!
-                <a href="mailto:id.cristiancarlo@gmail.com">Email Me.</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <div class="column large-5 medium-full contact-phone">
-                <h4>Call Me</h4>
-                <a href="tel:664-328-0109">+52 664 328 0109</a>
-            </div>
-
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="cristiancarlo" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://mx.linkedin.com/in/cristiancarlo?trk=profile-badge">Linked in</a></div>
-
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="#0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2c-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7c120.2 0 142.3 79.1 142.3 181.9v209.4z"/></svg>
 
 
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>Cristian Carlo Rojas de la Rosa, Portfolio 2023</span> 
-            </div>            
+
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM679 697.6C638.4 735 583 757 516.9 757c-95.7 0-178.5-54.9-218.8-134.9A245.02 245.02 0 0 1 272 512c0-39.6 9.5-77 26.1-110.1c40.3-80.1 123.1-135 218.8-135c66 0 121.4 24.3 163.9 63.8L610.6 401c-25.4-24.3-57.7-36.6-93.6-36.6c-63.8 0-117.8 43.1-137.1 101c-4.9 14.7-7.7 30.4-7.7 46.6s2.8 31.9 7.7 46.6c19.3 57.9 73.3 101 137 101c33 0 61-8.7 82.9-23.4c26-17.4 43.2-43.3 48.9-74H516.9v-94.8h230.7c2.9 16.1 4.4 32.8 4.4 50.1c0 74.7-26.7 137.4-73 180.1z"/></svg>
+
+
+
+
+                                <span class="u-screen-reader-text">Dribbble</span>
+                            </a>
+                        </li>
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>Cristian Carlo Rojas de la Rosa</span> 
+                        <span>2023</span>
+                    </p>
+                </div>
+
+            </div> <!-- end section-footer__bottom -->          
 
             <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </div>
-    </footer>
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
 
+    </div> <!-- end page-wrap -->
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
 
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
+</html>
